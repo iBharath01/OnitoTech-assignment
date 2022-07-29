@@ -1,0 +1,66 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.receipt_details {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.table_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.date_container {
+  display: flex;
+  flex-direction: row;
+  gap: 85px;
+}
+
+.container_text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container_text::after {
+  content: " *";
+  color: rgb(155, 40, 40);
+}
+
+.amount_contents {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+}
+
+.payment_contents {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.remarks_contents {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remarks {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
