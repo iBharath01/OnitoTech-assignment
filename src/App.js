@@ -8,17 +8,9 @@ function App() {
   const [payment, setPayment] = useState("");
   const [remarks, setRemarks] = useState("");
 
-  const [details, setDetails] = useState([]);
-
   const handleChange = (e) => {
     e.preventDefault();
-    let receipt = {
-      date,
-      amount,
-      payment,
-      remarks,
-    };
-    setDetails([...details, receipt]);
+      
   };
 
   const handleDelete = (e) => {
@@ -27,7 +19,6 @@ function App() {
     setAmount("");
     setPayment("");
   };
-
   return (
     <div className="App">
       <div className="receipt_details">Receipt Details</div>
@@ -62,8 +53,7 @@ function App() {
         </div>
         <div className="payment_contents">
           <div className="container_text">Payment</div>
-          <select value="payment"
-            onChange={(e) => setPayment(e.target.value)}
+          <select value={payment} onChange={(e) => setPayment(e.target.value)}
             style={{
               borderRadius: "4px",
               border: "gray 1px solid",
