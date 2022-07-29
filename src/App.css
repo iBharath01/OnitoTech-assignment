@@ -53,14 +53,31 @@
   gap: 65px;
 }
 
-.label {
-  display: flex;
-  justify-content: space-between;
-}
-
 .remarks {
   font-size: 20px;
   font-weight: 400;
 }
 
-
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-left: 180px;
+  }
+  
+  .cancel_button {
+    height: 50px;
+    width: 130px;
+    border-radius: 8px;
+    border: 1px solid red;
+    color: red;
+  }
+  
+  .submit_button {
+    height: 50px;
+    width: 130px;
+    border-radius: 8px;
+    background-color: rgb(5, 66, 5);
+    color: white;
+    border: none;
+  }
