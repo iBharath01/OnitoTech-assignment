@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 
-
 function App() {
   const [date, setDate] = useState(new Date());
   const [amount, setAmount] = useState("");
@@ -16,11 +15,11 @@ function App() {
       date,
       amount,
       payment,
-      remarks,  
-  };
+      remarks,
+    };
     setDetails([...details, receipt]);
   };
-  
+
   const handleDelete = (e) => {
     e.preventDefault();
     setDate("");
@@ -61,16 +60,18 @@ function App() {
         </div>
         <div className="payment_contents">
           <div className="container_text">Payment</div>
-          <select value={payment} onChange={(e) => setPayment(e.target.value)}
+          <select
+            value={payment}
+            onChange={(e) => setPayment(e.target.value)}
             style={{
               borderRadius: "4px",
               border: "gray 1px solid",
               width: "200px",
             }}
           >
-            <option >Cash</option>
-            <option >Cheque</option>
-            <option >Online</option>
+            <option>Cash</option>
+            <option>Cheque</option>
+            <option>Online</option>
           </select>
         </div>
         <div className="remarks_contents">
