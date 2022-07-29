@@ -10,8 +10,15 @@ function App() {
 
   const handleChange = (e) => {
     e.preventDefault();
-  }
+      
+  };
 
+  const handleDelete = (e) => {
+    e.preventDefault();
+    setDate("");
+    setAmount("");
+    setPayment("");
+  };
   return (
     <div className="App">
       <div className="receipt_details">Receipt Details</div>
@@ -75,7 +82,7 @@ function App() {
       </div>
       <div className="buttons">
         <div>
-          <button className="cancel_button">
+          <button className="cancel_button" onClick={handleDelete}>
             CANCEL
           </button>
         </div>
