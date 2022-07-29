@@ -8,11 +8,19 @@ function App() {
   const [payment, setPayment] = useState("");
   const [remarks, setRemarks] = useState("");
 
+  const [details, setDetails] = useState([]);
+
   const handleChange = (e) => {
     e.preventDefault();
-      
+    let receipt = {
+      date,
+      amount,
+      payment,
+      remarks,  
   };
-
+    setDetails([...details, receipt]);
+  };
+  
   const handleDelete = (e) => {
     e.preventDefault();
     setDate("");
