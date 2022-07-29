@@ -59,6 +59,18 @@ function App() {
           />
         </div>
       </div>
+      <div className="buttons">
+        <div>
+          <button className="cancel_button">
+            CANCEL
+          </button>
+        </div>
+        <div>
+          <button className="submit_button">
+            SUBMIT
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
